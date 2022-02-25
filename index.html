@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI | Bootstrap</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- *** -->
+      <!-- HEADER-->
+      <!-- *** -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3 fw-bold title" href="#">UI.Bootstrap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleNav"
+            aria-controls="toggleNav"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="toggleNav">
+            <ul class="navbar-nav m-auto p-0 ps-lg-5 fs-5">
+              <li class="nav-item ms-3">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <!-- SEARCH -->
+            <form class="d-flex ms-auto">
+              <button class="btn" type="submit">
+                <svg
+                  width="20"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br />
+      <!-- *** -->
+      <!-- PRESENTATION -->
+      <!-- *** -->
+      <article class="position-relative row">
+        <!-- PRESENTATION-->
+        <div class="col-2">
+          <div class="m-auto texture"></div>
+          <div class="presentation col-4 p-2 position-absolute top-20 start-0">
+            <div class="card-body">
+              <h5 class="card-title fs-1 fw-bold lh-base title">
+                We Help You Make All More Easy
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                facilis magni ab delectus earum doloremque! Dolor pariatur totam
+                molestiae itaque?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARROUSEL-->
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide col-10"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/imgs/1.jpg"
+                class="ratio ratio-16x9 img-presentation"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/imgs/2.jpg"
+                class="ratio ratio-16x9 img-presentation"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/imgs/3.jpg"
+                class="ratio ratio-16x9 img-presentation"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- ACCESORS BTNS -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- *** -->
+      <!-- COMPANIES -->
+      <!-- *** -->
+      <article class="bg-light text-center p-4 mt-5">
+        <h4 class="fs-5 fw-bold">TRUSTED BY OVER 1K+ COMPANIES</h4>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 w-75 m-auto p-0"
+        >
+          <div class="col">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-2"
+              width="100%"
+              height="50"
+              role="img"
+              aria-label="Company A"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee"></rect>
+              <text x="30%" y="50%" fill="#aaa" dy=".3em">Company B</text>
+            </svg>
+          </div>
+          <div class="col">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-2"
+              width="100%"
+              height="50"
+              role="img"
+              aria-label="Company B"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee"></rect>
+              <text x="30%" y="50%" fill="#aaa" dy=".3em">Company B</text>
+            </svg>
+          </div>
+          <div class="col">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-2"
+              width="100%"
+              height="50"
+              role="img"
+              aria-label="Company C"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee"></rect>
+              <text x="30%" y="50%" fill="#aaa" dy=".3em">Company C</text>
+            </svg>
+          </div>
+          <div class="col">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-2"
+              width="100%"
+              height="50"
+              role="img"
+              aria-label="Company D"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee"></rect>
+              <text x="30%" y="50%" fill="#aaa" dy=".3em">Company D</text>
+            </svg>
+          </div>
+        </div>
+      </article>
+      <!-- *** -->
+      <!-- HOT DEALS -->
+      <!-- *** -->
+      <article class="p-4 row mt-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card-body">
+            <h5 class="card-title fs-2 fw-bold lh-base title">
+              Hot 🔥 deals for you
+            </h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              similique veritatis quo?
+            </p>
+          </div>
+        </div>
+        <!-- ITEMS -->
+        <div
+          class="col-12 col-lg-8 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-0 m-0"
+        >
+          <div class="col">
+            <div class="card h-100 border border-0">
+              <img src="./assets/imgs/money.jpg" alt="shared" width="50px" />
+              <h5 class="card-title">1.5% cashback</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border border-0">
+              <img src="./assets/imgs/money.jpg" alt="shared" width="50px" />
+              <h5 class="card-title">30-days terms</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates, ex!
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border border-0">
+              <img src="./assets/imgs/money.jpg" alt="shared" width="50px" />
+              <h5 class="card-title">Save Money</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- *** -->
+      <!-- ABOUT US -->
+      <!-- *** -->
+      <article class="d-flex p-4 mt-5 align-items-start">
+        <div class="card-body d-inline-block" style="max-width: 25em">
+          <h5 class="card-title fs-2 fw-bold lh-base title">About Us</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+            similique veritatis quo?
+          </p>
+        </div>
+        <button type="button" class="btn btn-light shadow-lg p-3 ms-auto">
+          Learn more
+        </button>
+      </article>
+      <!-- *** -->
+      <!-- ABOUT US | INFO -->
+      <!-- *** -->
+      <article class="row justify-content-center m-0 p-0">
+        <div class="col-12 col-md-6 row row-cols-2 gx-4 gy-2">
+          <div class="col">
+            <div class="card h-100 border border-0">
+              <h3 class="card-title fw-bold fs-2">1.</h3>
+              <h4 class="card-title">Who we are</h4>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore repellendus tempore voluptatibus reiciendis?
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border border-0">
+              <h3 class="card-title fw-bold fs-2">2.</h3>
+              <h4 class="card-title">What Do We Do</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                pariatur natus eligendi?
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border border-0">
+              <h3 class="card-title fw-bold fs-2">3.</h3>
+              <h4 class="card-title">How Do We Help</h4>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+                officiis perspiciatis saepe.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border border-0">
+              <h3 class="card-title fw-bold fs-2">4.</h3>
+              <h4 class="card-title">Create Success Story</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 row row-cols-2">
+          <!-- COOL 1-->
+          <div class="col p-0 mt-4">
+            <img
+              src="./assets/imgs/1.jpg"
+              class="img-presentation-2"
+              alt="..."
+            />
+            <img
+              src="./assets/imgs/2.jpg"
+              class="img-presentation-2"
+              alt="..."
+            />
+          </div>
+          <!-- COOL 2-->
+          <div class="col p-0">
+            <img
+              src="./assets/imgs/3.jpg"
+              class="img-presentation-2"
+              alt="..."
+            />
+            <img
+              src="./assets/imgs/1.jpg"
+              class="img-presentation-2"
+              alt="..."
+            />
+          </div>
+        </div>
+      </article>
+      <!-- *** -->
+      <!-- PRODUCTOS -->
+      <!-- *** -->
+      <article class="p-4 mt-5 d-block">
+        <h5 class="fs-2 fw-bold title w-100">Products</h5>
+        <!-- NAV OF PRODUCTS -->
+        <div class="d-flex nav-tabs">
+          <ul class="nav d-blck-flex m-auto">
+            <li class="nav-item">
+              <a class="nav-link active disabled" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Office</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Garden</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Bussines</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+        <br />
+        <br />
+        <!-- PRODUCTS PREVIEW -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+          <div class="col position-relative pe-0">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-light"
+              style="z-index: 9"
+            >
+              99+
+              <span class="visually-hidden">Stock</span>
+            </span>
+            <div class="card h-100 border">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Chair X0</h5>
+                <p class="card-text d-inline">$50.00</p>
+                <small class="text-muted">$65.00</small>
+                <span class="space"></span>
+              </div>
+              <div
+                class="card-footer bg-transparent position-relative space-free"
+              >
+                <img
+                  src="./assets/imgs/silla.png"
+                  class="card-img-top space-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col position-relative pe-0">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-light"
+              style="z-index: 9"
+            >
+              99+
+              <span class="visually-hidden">Stock</span>
+            </span>
+            <div class="card h-100 border">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Chair X0</h5>
+                <p class="card-text d-inline">$50.00</p>
+                <small class="text-muted">$65.00</small>
+              </div>
+              <div class="card-footer bg-transparent position-relative">
+                <img
+                  src="./assets/imgs/silla.png"
+                  class="card-img-top space-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col position-relative pe-0">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-light"
+              style="z-index: 9"
+            >
+              99+
+              <span class="visually-hidden">Stock</span>
+            </span>
+            <div class="card h-100 border">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Chair X0</h5>
+                <p class="card-text d-inline">$50.00</p>
+                <small class="text-muted">$65.00</small>
+              </div>
+              <div class="card-footer bg-transparent position-relative">
+                <img
+                  src="./assets/imgs/silla.png"
+                  class="card-img-top space-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col position-relative pe-0">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-light"
+              style="z-index: 9"
+            >
+              99+
+              <span class="visually-hidden">Stock</span>
+            </span>
+            <div class="card h-100 border">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Chair X0</h5>
+                <p class="card-text d-inline">$50.00</p>
+                <small class="text-muted">$65.00</small>
+              </div>
+              <div class="card-footer bg-transparent position-relative">
+                <img
+                  src="./assets/imgs/silla.png"
+                  class="card-img-top space-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <!-- P -->
+          <div class="col position-relative pe-0">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-light"
+              style="z-index: 9"
+            >
+              99+
+              <span class="visually-hidden">Stock</span>
+            </span>
+            <div class="card h-100 border">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Chair X1</h5>
+                <p class="card-text d-inline">$55.00</p>
+                <small class="text-muted">$75.00</small>
+                <span class="space"></span>
+              </div>
+              <div class="card-footer bg-transparent position-relative">
+                <span class="space"></span>
+                <span class="space"></span>
+                <img
+                  src="./assets/imgs/silla.png"
+                  class="card-img-top space-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <!-- P -->
+          <div class="col position-relative pe-0">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-light"
+              style="z-index: 9"
+            >
+              99+
+              <span class="visually-hidden">Stock</span>
+            </span>
+            <div class="card h-100 border">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Chair X02</h5>
+                <p class="card-text d-inline">$60.00</p>
+                <small class="text-muted">$85.00</small>
+                <span class="space"></span>
+              </div>
+              <div class="card-footer bg-transparent position-relative">
+                <span class="space"></span>
+                <span class="space"></span>
+                <img
+                  src="./assets/imgs/silla.png"
+                  class="card-img-top space-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <!-- P -->
+          <div class="col position-relative pe-0">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-light"
+              style="z-index: 9"
+            >
+              99+
+              <span class="visually-hidden">Stock</span>
+            </span>
+            <div class="card h-100 border">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Chair X01 Eagle</h5>
+                <p class="card-text d-inline">$65.00</p>
+                <small class="text-muted">$95.00</small>
+                <span class="space"></span>
+              </div>
+              <div class="card-footer bg-transparent position-relative">
+                <span class="space"></span>
+                <span class="space"></span>
+                <img
+                  src="./assets/imgs/silla.png"
+                  class="card-img-top space-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <!-- P -->
+          <div class="col position-relative pe-0">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-light"
+              style="z-index: 9"
+            >
+              99+
+              <span class="visually-hidden">Stock</span>
+            </span>
+            <div class="card h-100 border">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Chair XX1</h5>
+                <p class="card-text d-inline">$75.00</p>
+                <small class="text-muted">$105.00</small>
+                <span class="space"></span>
+              </div>
+              <div class="card-footer bg-transparent position-relative">
+                <span class="space"></span>
+                <span class="space"></span>
+                <img
+                  src="./assets/imgs/silla.png"
+                  class="card-img-top space-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <!-- P -->
+          <div class="col position-relative pe-0">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success text-light"
+              style="z-index: 9"
+            >
+              99+
+              <span class="visually-hidden">Stock</span>
+            </span>
+            <div class="card h-100 border">
+              <div class="card-body bg-light">
+                <h5 class="card-title">Chair XX1 Eagle</h5>
+                <p class="card-text d-inline">$85.00</p>
+                <small class="text-muted">$115.00</small>
+                <span class="space"></span>
+              </div>
+              <div class="card-footer bg-transparent position-relative">
+                <span class="space"></span>
+                <span class="space"></span>
+                <img
+                  src="./assets/imgs/silla.png"
+                  class="card-img-top space-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <!-- P -->
+        </div>
+      </article>
+      <!-- *** -->
+      <!-- CLIENT SAYS -->
+      <!-- *** -->
+      <section
+        class="py-5 text-center container bg-light rounded-3 overflow-hidden shadow-sm position-relative mt-5"
+      >
+        <img
+          src="./assets/imgs/corcle.png"
+          alt="decoration-client"
+          class="decoration-client position-absolute top-0 start-0 translate-middle"
+        />
+        <div class="row py-lg-5">
+          <!-- HEAD -->
+          <div class="col-12 mx-auto" style="max-width: 20rem">
+            <h3 class="card-title fs-2 fw-bold lh-base title m-auto p-2">
+              What our happy client says
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+              ut! Repellat, exercitationem odit.
+            </p>
+          </div>
+          <hr class="featurette-divider" />
+          <!-- CLIENTS -->
+          <div class="col-8 mx-auto p-5">
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2 text-start">
+                <h2 class="featurette-heading">
+                  Joe Biden
+                  <span class="text-muted">Company A.</span>
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  aliquid impedit odit consequuntur in sunt reprehenderit id sed
+                  distinctio vitae!
+                </p>
+                <h4 class="fs-5 mt-2">Experience</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img
+                  src="./assets/imgs/person.jpg"
+                  alt="Joe Biden"
+                  width="500"
+                  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto img-presentation-2"
+                  height="500"
+                />
+              </div>
+            </div>
+            <br />
+            <p>
+              <a
+                href="#"
+                class="btn btn-light shadow-sm my-2 text-white rounded-circle m-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-caret-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="btn btn-light shadow-sm my-2 text-white rounded-circle m-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-caret-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+                  />
+                </svg>
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- *** -->
+      <!-- FORM CONTACT -->
+      <!-- *** -->
+      <div class="row mt-5 p-3 bg-light text-center shadow-sm">
+        <h4 class="mt-4">Contact us</h4>
+        <hr class="my-4" />
+        <form class="needs-validation" novalidate="">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder=""
+                value=""
+                required=""
+              />
+              <div class="invalid-feedback">Valid first name is required.</div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label"
+                >Last name <span class="text-muted">(Optional)</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder=""
+                value=""
+                required=""
+              />
+              <div class="invalid-feedback">Valid last name is required.</div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <div class="input-group has-validation">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="you.email"
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+                <span class="input-group-text">@gmail.com</span>
+              </div>
+              <small class="text-muted">Email must be gmail.com</small>
+            </div>
+
+            <div class="col-md-5">
+              <label for="ocupation" class="form-label">Ocupation</label>
+              <select class="form-select" id="ocupation" required="">
+                <option value="">Choose...</option>
+                <option>Lorem, ipsum.</option>
+                <option>Lorem, ipsum dolor.</option>
+                <option>Lorem, sit..</option>
+                <option>Lorem, ipsum dolor.</option>
+                <option>Lorem ipsum dolor sit.</option>
+              </select>
+              <div class="invalid-feedback">Please select a valid country.</div>
+            </div>
+            <div class="col-md-5 ms-auto text-start">
+              <label class="form-label">Gender</label>
+              <div class="my-3">
+                <div class="form-check">
+                  <input
+                    id="male"
+                    name="gender"
+                    type="radio"
+                    class="form-check-input"
+                    checked=""
+                    required=""
+                  />
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    id="feminine"
+                    name="gender"
+                    type="radio"
+                    class="form-check-input"
+                    required=""
+                  />
+                  <label class="form-check-label" for="feminine"
+                    >Feminine</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 m-auto">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                name="message"
+                class="form-control"
+                id="message"
+                cols="8"
+                rows="3"
+                placeholder="the message..."
+                value=""
+                required=""
+              ></textarea>
+              <div class="invalid-feedback">Valid message is required.</div>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+
+          <!-- Button trigger modal -->
+          <button
+            class="w-25 btn btn-outline-primary"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Send
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              class="bi bi-send"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+      <br />
+
+      <!-- MODAL -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Message sent</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">the message...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="./assets/js/bootstrap.bundle.js"></script>
+    </div>
+  </body>
+</html>
